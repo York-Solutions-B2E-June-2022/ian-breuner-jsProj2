@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Test by Ian Breuner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<h1>JSON TEST</h1>
+<p>Current user's public IP address:</p> <p id="ipAddress"></p>
+<br>
+<p>HTTP Headers:</p> <p id="httpHeaders"></p>
+<br>
+<p>Current Date and Time (GMT Timezone):</p> <p id="currentDate"></p> <p id="updatedTime"></p>
+<br>
+<p>Submit Text in JSON Format</p>
+<br>
+
+    <label for="jsonCheck"> Input JSON text here:</label>
+    <input type="text" id="jsonCheck" name="jsonCheck">
+    <button type="submit" onclick="validateText()">Check JSON</button>
+
+<p id="jsonValidate"></p>
+<p id="jsonExplanation"></p>
+
+<br>
+
+<p>Submit Text to return the MD5 hash code of that text</p>
+
+
+    <label for="calculateMdfive"> Input Text Here:</label>
+    <input type="text" id="calculateMdfive" name="calculateMdfive">
+    <button type="submit" onclick="calculateMdFiveFunction()">Calculate MD5</button>
+
+<p id="mdFive"></p>
+
+</body>
+</html>
